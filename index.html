@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title>weather me up</title>
+        <link rel="stylesheet"href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <nav>
+             <ul>
+                 <li><a href="index.html">HOME</a></li>
+                 <li><a href="http://www.icuzambia.net">ICU ZAMBIA</a></li>
+                 <li><a href="https://www.zrdc.org">ZRDC</a></li>
+             </ul>
+            </nav> 
+        </header>
+        <div class="container">
+            <div class="search-box">
+                <input type="text" placeholder="enter location">
+                <button class="bx bx-search-alt"></button>
+            </div>
+            <div class="weather-box">
+                <div class="box">
+                    <div class="info-weather">
+                        <div class="weather">
+                            <img src="cloud.gif">
+                            <p class="temperature" style="padding-left:10px;">0<span>°C</span></p>
+                            <p class="description">broken clouds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-details" style="display: inline;">
+                <div class="humidity">
+                    <i class='bx bx-water'></i></i>
+                    <div class="text">
+                        <div class="info-humidity"><span>0%</span></div>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class='bx bxl-tailwind-css'></i></i>
+                    <div class="text">
+                        <div class="info-wind"><span>0km/h</span></div>
+                        <p>wind speed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-containeer">
+                <div id="error-message" class="hidden">
+                    <img src="network.webp" alt="network issue" id="error-image"/>
+                    <p>Something went wrong.<br> please check your connection and try again </p>
+                </div>
+            </div>
+            <div class="not-found">
+                <div class="box">
+                    <img src="404.png">
+                    <p>sorry location not found</p>
+                </div>
+            </div>
+            <footer class="footer">ward:kabwata<br>full name: shanil bakili<br>sin:2312541164</footer>
+        </div>
+        <script src="scrit.js"></script>
+    </body>
+</html>
